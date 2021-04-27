@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <head>
-<title>Etch-A-Sketch v 1.3.2</title>
+<title>Etch-A-Sketch v 1.3.3</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
         $("p").hover(function(){
-            $(this).css("background-color", "yellow");
+            $(this).css("background-color", "deepskyblue");
         }, function(){
-        $(this).css("background-color", "pink");
+        $(this).css("background-color", "deepskyblue");
     });
   });</script>
 <style>
+.grid {
+    column-count: 16;
+    column-gap: 0px;
+    column-width: 50px;
+    row-gap: 0px;
+}
 </style>
 </head>
 <body>
-    <p>poop</p>
-    <p>poop</p>
-    <p>poop</p>
-    <div id="container" class="largeSquare content">
+    <div id="container" class="grid"></div>
+        <p> </p>
+        <p> </p>
+        <p> </p>
         <div class="smallSquare"> </div>
         <div class="smallSquare"> </div>
         <div class="smallSquare"> </div>

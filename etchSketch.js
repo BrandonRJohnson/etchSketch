@@ -4,7 +4,7 @@ const container = document.querySelector('#container');
 
 // Need to create 64 squares in container div using DOM
 // Wondering here if we can use a while loop to create these 64 squares instead of doing them all individually 
-let div = document.createElement('div');
+let content = document.createElement('div');
 let squareCount = 0;
 
 while (squareCount < 64) {

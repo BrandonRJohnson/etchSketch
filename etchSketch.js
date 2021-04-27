@@ -7,7 +7,7 @@ const container = document.querySelector('#container');
 let div = document.createElement('div');
 let squareCount = 0;
 
-While squareCount < 64 {
+While (squareCount < 64); {
     document.createElement('div');
     container.appendChild('div');
     squareCount ++;

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <head>
-<title>Etch-A-Sketch v 1.3.4</title>
+<title>Etch-A-Sketch v 1.3.5</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+// hover function that causes the color of certain elements to change when hovered over on the page
     $(document).ready(function(){
-        $("p").hover(function(){
+        $("container").hover(function(){
             $(this).css("background-color", "deepskyblue");
         }, function(){
         $(this).css("background-color", "deepskyblue");
     });
-  });</script>
+  });
+</script>
 <style>
 .grid {
     column-count: 16;
@@ -27,6 +29,7 @@
         <p class="grid">crap</p>
         <p class="grid">crap</p>
         <p class="grid">crap</p>
+        <img src="https://wallpapercave.com/wp/wp6681156.jpg" width="50" height="50">
     </div>
 //Creating a reset button that returns the website to the default
     <script src="etchSketch.js"></script>

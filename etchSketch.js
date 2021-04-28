@@ -15,12 +15,13 @@ makeRows(4, 4);
 function adjustGrid() {
     let input = document.getElementById("userInput").value;
     makeRows('input','input');
-    console.log(input);
 }
+
+console.log(adjustGrid());
 // need to get the grid boxes to change color
 
 // need to get the grid boxes to change color based on hover
-document.getElementById("grid-item").addEventListener("click",);
+
 
 // include userInput box so the user can determine the size of the grid *work on this next I think it would be the easiest to get working*
 

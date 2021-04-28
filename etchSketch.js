@@ -12,8 +12,10 @@ function makeRows(rows, cols) {
 
 makeRows(4, 4);
 
-function adjustGrid(userInput) {
-
+function adjustGrid() {
+    let input = document.getElementById("userInput").value;
+    makeRows('input','input');
+    console.log(input);
 }
 // need to get the grid boxes to change color
 

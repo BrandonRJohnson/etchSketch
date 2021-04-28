@@ -6,24 +6,16 @@ function makeRows(rows, cols) {
   container.style.setProperty('--grid-cols', cols);
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
-    cell.innerText = (c + 1);
     container.appendChild(cell).className = "grid-item";
   };
 };
 
 makeRows(16, 16);
+
+
 // Need to create 64 squares in container div using DOM
 // Wondering here if we can use a while loop to create these 64 squares instead of doing them all individually 
-let content = document.createElement('div');
-let squareCount = 0;
 
-while (squareCount < 64) {
-    document.createElement('div');
-    container.appendChild('div');
-    squareCount ++;
-}
-
-console.log(squareCount);
 // Those squares need to be formatted into a larger square using CSS
 
 // Set up a hover effect so that the grid divs

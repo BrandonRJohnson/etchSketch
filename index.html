@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <head>
+<meta charset="UTF-8">
 <title>Etch-A-Sketch v 1.3.5</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 // hover function that causes the color of certain elements to change when hovered over on the page
     $(document).ready(function(){
-        $("p","blank").hover(function(){
+        $("p").hover(function(){
             $(this).css("background-color", "deepskyblue");
         }, function(){
         $(this).css("background-color", "deepskyblue");
@@ -13,11 +14,22 @@
   });
 </script>
 <style>
-.grid {
-    column-count: 16;
-    column-gap: 0px;
-    column-width: 50px;
-    row-gap: 0px;
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 </style>
 </head>
@@ -25,12 +37,8 @@
 // Square that respond to the hover function
 // Create 16x16 grid of those squares
 // Create an option for user input to determine the amount of squares
-    <div id="container"></div>
-        <p class="grid">crap</p>
-        <p class="grid">crap</p>
-        <p class="grid">crap</p>
-        <img id= "blank" src="https://wallpapercave.com/wp/wp6681156.jpg" width="50" height="50">
-    </div>
+<div id="container"></div>
+
 //Creating a reset button that returns the website to the default
     <script src="etchSketch.js"></script>
 </body>

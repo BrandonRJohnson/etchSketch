@@ -10,7 +10,7 @@ function makeRows(rows, cols) {
   };
 };
 
-makeRows(16, 16);
+makeRows(4, 4);
 
 
 // Need to create 64 squares in container div using DOM

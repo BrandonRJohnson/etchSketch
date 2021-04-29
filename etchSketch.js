@@ -12,10 +12,10 @@ function makeRows(rows, cols) {
 
 makeRows(4, 4);
 
-const gridItem = document.getElementById("grid-item");
+let gridItem = document.getElementById("grid-item");
 
 function changeColor() {
-    document.getElementById("grid-item").style.color =
+    gridItem.style.color = purple;
 }
 
 gridItem.addEventListener("mouseenter", changeColor);

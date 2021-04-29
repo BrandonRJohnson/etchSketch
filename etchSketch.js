@@ -12,16 +12,30 @@ function makeRows(rows, cols) {
 
 makeRows(4, 4);
 
-function adjustGrid() {
-    let input = document.getElementById("userInput").value;
-    makeRows('input','input');
-}
+let gridItem = document.getElementById("grid-item");
 
-console.log(adjustGrid());
-// need to get the grid boxes to change color
-
+gridItem.addEventListener("mouseenter", function( event ) {
+    // highlight the mouseenter target
+    event.target.style.color = "purple";
+  
+    // reset the color after a short delay
+    setTimeout(function() {
+      event.target.style.color = "";
+    }, 500);
+  }, false);
+  
+  // This handler will be executed every time the cursor
+  // is moved over a different list item
+gridItem.addEventListener("mouseover", function( event ) {
+    // highlight the mouseover target
+    event.target.style.color = "orange";
+  
+    // reset the color after a short delay
+    setTimeout(function() {
+      event.target.style.color = "";
+    }, 500);
+  }, false);
 // need to get the grid boxes to change color based on hover
 
 
-// include userInput box so the user can determine the size of the grid *work on this next I think it would be the easiest to get working*
-
+// include userInput box so the user can determine the size of the grid *work on this next I think it would be the easiest to get working

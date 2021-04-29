@@ -18,9 +18,7 @@ function changeColor() {
     gridItem.style.color = purple;
 }
 
-gridItem.addEventListener("mouseenter", changeColor);
-  // This handler will be executed every time the cursor
-  // is moved over a different list item
+document.getElementsByClassName("grid-item").addEventListener("mouseenter", changeColor);
 gridItem.addEventListener("mouseover", changeColor); 
 
 function adjustGrid() {

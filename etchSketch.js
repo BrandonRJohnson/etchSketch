@@ -19,7 +19,7 @@ function changeColor() {
     gridItem.style.color = purple;
 }
 
-document.getElementsByID("poop").addEventListener("mouseenter", changeColor);
+document.getElementById("poop").addEventListener("mouseenter", changeColor);
 gridItem.addEventListener("mouseover", changeColor); 
 
 function adjustGrid() {

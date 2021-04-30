@@ -16,7 +16,7 @@ makeRows(4, 4);
 let gridItem = document.getElementsByClassName("grid-item");
 
 function changeColor() {
-  document.getElementById("sketch").style.color = "magenta";
+  document.getElementById("sketch").style.backgroundColor = "magenta";
   console.log("1")
 }
 document.getElementById("sketch").addEventListener("mouseenter", changeColor);

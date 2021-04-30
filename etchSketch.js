@@ -17,6 +17,7 @@ let gridItem = document.getElementsByClassName("grid-item");
 
 function changeColor() {
   document.getElementById("sketch").style.color = purple;
+  console.log("1")
 }
 
 document.getElementById("sketch").addEventListener("mouseenter", changeColor);

@@ -7,6 +7,7 @@ function makeRows(rows, cols) {
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
     container.appendChild(cell).className = "grid-item";
+    cell.setAttribute("id", "poop");
   };
 };
 
@@ -18,7 +19,7 @@ function changeColor() {
     gridItem.style.color = purple;
 }
 
-document.getElementsByClassName("grid-item").addEventListener("mouseenter", changeColor);
+document.getElementsByID("poop").addEventListener("mouseenter", changeColor);
 gridItem.addEventListener("mouseover", changeColor); 
 
 function adjustGrid() {

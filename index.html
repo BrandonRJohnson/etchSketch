@@ -14,6 +14,8 @@
   column-gap: 0px;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
+  width: 500px;
+  height: 500px;
 }
 
 .grid-item {
@@ -25,10 +27,9 @@
 </head>
 <body>
 <div id="container"></div>
-<form>
     <input id="userInput" type="text" placeholder="How many rows and columns would you like?">
-    <button id="btn" onclick="adjustGrid()">Click Me!</button>
-</form>
+    <button id="btn1" onclick="adjustGrid()">Click Me!</button>
+    <button id="btn2" onclick="resetGrid()">Reset</button>
     <script src="etchSketch.js"></script>
 </body>
 </html> 
